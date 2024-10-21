@@ -1,0 +1,376 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide{
+    padding: 110px 0 0 0;
+}
+
+.navbar img{
+    width: 150px;
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00d4a1; 
+}
+
+.navbar-toggler {
+    border-color: white;
+}
+
+.navbar-toggler-icon {
+    color: white; 
+}
+
+.social-icons {
+    position: fixed; /* Fixes the position to the viewport */
+    bottom: 20px; /* Adjusts vertical position */
+    left: 20px; /* Adjusts horizontal position */
+    display: flex;
+    flex-direction: column; /* Aligns icons vertically */
+    gap: 15px; /* Space between icons */
+    z-index: 1000; /* Ensures icons are above other elements */
+}
+
+.icon {
+    font-size: 30px; /* Size of the icons */
+    color: white; 
+    text-decoration: none; /* Removes underline */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Animation for transform and opacity */
+}
+
+.instagram {
+    color: #C13584; /* Instagram color */
+}
+
+.linkedin {
+    color: #0077B5; /* LinkedIn color */
+}
+
+.facebook {
+    color: #1877F2; /* Facebook color */
+}
+
+/* WhatsApp Icon */
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #25d366; /* WhatsApp green */
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: pop-up 1s ease-in-out;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-icon a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Animation for pop-up effect */
+@keyframes pop-up {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Hover Effects */
+.icon:hover {
+    transform: scale(1.1); /* Slightly enlarge the icon */
+    opacity: 0.8; /* Slightly decrease opacity */
+}
+
+
+
+/* banner start */
+.swiper-slide .banner-bg {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.banner{
+    padding: 120px 0 0 0;
+}
+
+#typing-text {
+    font-size: 6vw; 
+    line-height: 1.2; 
+    white-space: normal; 
+    overflow: hidden; 
+    border-right: 2px solid black; 
+    display: inline-block; 
+}
+
+.text-blue {
+    color: #00d4a1;
+}
+
+.blinking-cursor {
+    animation: blink 0.7s step-start infinite; /* Cursor blink effect */
+}
+
+.banner > div {
+    padding-top:40px ;
+}
+
+.banner-btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #2ee0b6;
+    padding: 15px;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden; 
+    transition: color 0.3s ease; 
+}
+
+.banner-btn:hover {
+    color: #2ee0b6; 
+    background-color: #fff;
+}
+
+.banner-btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px; 
+    width: 0; 
+    background-color: #2ee0b6; 
+    transition: width 0.4s ease; 
+}
+
+.banner-btn:hover::after {
+    width: 100%; 
+}
+
+/* Neural nerve animation starts */
+.neural-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+    opacity: 0.3; /* Adjust for subtle effect */
+}
+
+.neural-nerves {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translateY(0); /* Start position */
+    animation: moveNerves 10s linear infinite alternate; /* Alternates between up and down */
+}
+
+@keyframes moveNerves {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px); 
+    }
+}
+
+.banner {
+    position: relative;
+    z-index: 2;
+    text-align: center; 
+}
+
+.swiper-slide.banner-bg {
+    background: linear-gradient(180deg, rgba(46, 224, 182, 0.1) 0%, rgba(255, 255, 255, 0.8) 100%);
+}
+
+/* Neural nerve animation ends */
+/* banner ends */
+
+
+
+/* qoutes starts */
+/* Apply background only to the <p> inside .quotes */
+.quotes p {
+    background-image: url(../image/quotes/ToothCure-quotes-bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative; /* Ensure the background is applied correctly */
+    padding: 20px; /* Add padding to give space around the text */
+    text-align: center; /* Center-align the text */
+    margin-top: 60px;
+}
+
+/* Add a light overlay on the background inside the <p> */
+.quotes p::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7); /* Light overlay for readability */
+    z-index: 1; /* Position behind the text */
+}
+
+/* Ensure text appears above the background and overlay */
+.quotes p span {
+    position: relative;
+    z-index: 2; /* Position above the overlay */
+    font-size: 1.2rem; /* Adjust font size */
+    color: #333; /* Dark text color for contrast */
+    display: block;
+    margin-bottom: 10px; /* Add spacing between lines */
+}
+
+.quotes p{
+    font-size: 1.3rem;
+}
+
+/* counter */
+/* General styles for the counter section */
+.counter-section {
+    background-image: url(../image/number/nizban.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0; /* Top and bottom padding */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-top: 100px;
+}
+
+/* Counter styling */
+.counter {
+    font-size: 3rem; /* Large font size for the counter */
+    font-weight: bold; /* Bold text */
+    color: #2ee0b6; /* Custom color for the counter */
+    transition: all 0.5s ease; /* Smooth transition for the counter */
+    position: relative; /* Position relative for effects */
+}
+
+/* Counter animation on load */
+.counter.animate {
+    animation: countUp 2s ease-in-out forwards; /* Animation for counting up */
+}
+
+/* Keyframes for the count-up animation */
+@keyframes countUp {
+    from {
+        transform: translateY(20px); /* Start slightly below */
+        opacity: 0; /* Start invisible */
+    }
+    to {
+        transform: translateY(0); /* End at original position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+/* Label styling */
+.label {
+    font-size: 1rem; /* Smaller font size for the label */
+    color: #fff; /* Dark color for the label */
+    text-align: center; /* Center align text */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .social-icons {
+        flex-direction: row; /* Change to horizontal layout */
+        bottom: 10px; /* Keep at the bottom */
+        left: 10px; /* Adjust position from the left */
+    }
+
+    .icon {
+        font-size: 30px; /* Smaller icons on mobile */
+    }
+
+    .banner{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .counter {
+        font-size: 2rem; /* Smaller font size on mobile */
+    }
+
+    .label {
+        font-size: 1rem; /* Smaller label on mobile */
+    }
+    .counter-section{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    #typing-text {
+        font-size: 8vw; /* Larger font size for mobile view */
+    }
+    .quotes p{
+        font-size: 0.5rem;
+        margin-top: 50;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

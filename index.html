@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>ToothCure</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav data-aos="zoom-in-down" class="navbar navbar-expand-md navbar-ligh bg-light fixed-top">
+        <div class="container">
+            <!-- Logo/Brand -->
+            <a class="navbar-brand" href="#">
+                <img src="./asset/image/logo/ToothCure-logo.png" alt="ToothCure Logo">
+            </a>
+
+            <!-- Toggle button for mobile (hamburger icon) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Career</a>
+                    </li>
+                    <!-- Dropdown for Services -->
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="#">Braces - Orthodontics</a></li>
+                            <li><a class="dropdown-item" href="#">Dentures</a></li>
+                            <li><a class="dropdown-item" href="#">Clear Aligner</a></li>
+                            <li><a class="dropdown-item" href="#">Kids Dentistry</a></li>
+                            <li><a class="dropdown-item" href="#">Dental Jewellery</a></li>
+                            <li><a class="dropdown-item" href="#">Dental Implants</a></li>
+                            <li><a class="dropdown-item" href="#">Infection Control</a></li>
+                            <li><a class="dropdown-item" href="#">Gum Therapy</a></li>
+                            <li><a class="dropdown-item" href="#">Teeth Whitening</a></li>
+                            <li><a class="dropdown-item" href="#">Laser Dentistry</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Social Media Icons -->
+    <div data-aos="fade-up-right" class="social-icons">
+        <a href="https://www.instagram.com" target="_blank" class="icon instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" class="icon linkedin">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://www.facebook.com" target="_blank" class="icon facebook">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+    </div>
+
+    <!-- WhatsApp Icon -->
+    <div class="whatsapp-icon">
+        <a href="https://api.whatsapp.com/send/?phone=%2B918925530313" target="_blank">
+            <i data-aos="fade-left" class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+
+        <div class="swiper-wrapper">
+
+            <section class="swiper-slide banner-bg">
+
+                <!-- Neural Nerve Background -->
+                <div class="neural-bg">
+                    <svg class="neural-nerves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="none" stroke="#2ee0b6" stroke-width="4"
+                            d="M0,100 C150,200 300,0 450,150 C600,300 750,50 900,200 C1050,350 1200,100 1350,250" />
+                        <path fill="none" stroke="#2ee0b6" stroke-width="2"
+                            d="M0,150 C100,100 200,200 300,100 C400,0 500,300 600,150 C700,0 800,250 900,50 C1000,-50 1100,300 1200,200 C1300,100 1400,50 1500,100" />
+                        <!-- Add more path elements as needed for a more complex effect -->
+                    </svg>
+                </div>
+
+                <!-- Banner Section -->
+                <section class="banner container">
+                    <h1 id="typing-text"></h1> <!-- H1 element for typing effect -->
+
+                    <h3 data-aos="fade-up" data-aos-delay="600" class="my-3">
+                        We exist to preserve your past and protect your future.
+                    </h3>
+
+                    <div data-aos="fade-right">
+                        <a class="banner-btn" href="https://calendly.com/sabari-nizcare-mamce/new-meeting">Book an
+                            Appointment</a>
+                    </div>
+                </section>
+
+            </section>
+
+
+            <section class="swiper-slide">
+
+                <div class="quotes container text-center">
+                    <p>
+                        <span class="d-block">32 Dental Care's mission and philosophy are to deliver highly personalised
+                            dental care that is suited to the needs of each</span>
+                        <span class="d-block">patient in a comfortable and friendly environment to provide an enhanced
+                            experience.</span>
+                    </p>
+
+                    <div>
+                        <a class="banner-btn" href="#">More About Us</a>
+                    </div>
+                </div>
+
+                <div class="counter-section">
+                    <div class="row row-cols-2 row-cols-md-4 g-4"> <!-- 2 columns on mobile and 4 on larger screens -->
+                        <div class="col d-flex flex-column align-items-center py-3">
+                            <div class="counter mb-2" data-target="9632">0</div>
+                            <div class="label text-center">Happy Patients</div>
+                        </div>
+                        <div class="col d-flex flex-column align-items-center py-3">
+                            <div class="counter mb-2" data-target="178">0</div>
+                            <div class="label text-center">Qualified Doctors</div>
+                        </div>
+                        <div class="col d-flex flex-column align-items-center py-3">
+                            <div class="counter mb-2" data-target="864">0</div>
+                            <div class="label">Clinic Rooms</div>
+                        </div>
+                        <div class="col d-flex flex-column align-items-center py-3">
+                            <div class="counter mb-2" data-target="473">0</div>
+                            <div class="label">Local Partners</div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+
+
+
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./asset/js/script.js"></script>
+    <!-- AOS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 50,
+            duration: 1200
+        });      
+    </script>
+</body>
+
+
+</html>
